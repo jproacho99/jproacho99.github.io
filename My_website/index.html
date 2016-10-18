@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link href="index.css" rel="stylesheet" type="text/css">
+        <meta charset="utf-8">
+        <title>Home</title>
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body class="main" style="background-color:rgb(42, 50, 63)">
+        <a href="index.html" style="color:white">Home</a>
+        <a href="portfolio.html" style="color:white">Portfolio</a>
+        <a href="aboutme.html" style="color:white">About Me</a>
+        <h1 class="main1" style="color:white" align="center"><u>Welcome to my Home Page!</u></h1>
+
+        <div class="w3-content" style="max-width:85%;position:relative; margin:auto">
+            <div class="w3-display-container mySlides">
+                <img src="images/home.GIF" style="width:100%">
+                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                    Welcome!
+                  </div>
+            </div>
+            
+            <div class="w3-display-container mySlides">
+                <img src="images/houston.jpg" style="width:100%">
+                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                    Rice University, Houston, TX
+                  </div>
+            </div>
+    
+            <div class="w3-display-container mySlides">
+                <img src="images/waterfall.jpg" style="width:100%">
+                <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                    Niagara Falls, NY
+                  </div>
+            </div>
+    
+            <div class="w3-display-container mySlides">
+                <img src="images/times square.jpg" style="width:100%">
+                <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                    Times Square, New York City, NY
+                  </div>
+            </div>
+    
+            <div class="w3-display-container mySlides">
+                <img src="images/park.jpg" style="width:100%">
+                <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+                    Cedar Point, Sandusky, OH
+                  </div>
+            </div>
+    
+            <div class="w3-display-container mySlides">
+                <img src="images/campus.jpg" style="width:100%">
+                <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                    Univeristy of California, Berkeley, CA
+                  </div>
+            </div>
+    
+            <div class="w3-display-container mySlides">
+                <img src="images/bridge.jpg" style="width:100%">
+                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                    San Francisco, CA
+                  </div>
+            </div>
+            
+            <a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
+            <a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
+
+        </div>
+
+        <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n){
+        showDivs(slideIndex += n);
+        }
+
+        function showDivs(n){
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+        }
+        </script>
+    </body>
+</html>
