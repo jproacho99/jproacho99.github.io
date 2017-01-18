@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link href="index.css" rel="stylesheet" type="text/css">
+        <meta charset="utf-8">
+        <title>Favorite Classes!</title>
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body class="main" style="background-color:rgb(35, 155, 133)">
+        <a href="index.html" style="color:black">Home</a>
+        <a href="portfolio.html" style="color:black">Portfolio</a>
+        <a href="aboutme.html" style="color:black">About Me</a>
+        <a href="favoriteclass.html" style="color:black">Favorite Class</a>
+        <h1 class="main1" style="color:black"
+            <u align="center">My class schedule and favorite classes!</u></ht>
+        </h1>
+        <p class="main" style="color:black" align="center">This page shows my complete class schedule and favorite classes! (Monday to Friday)</p>
+        <br>
+        <table align="center">
+            <tr class="main" style="color:black" align="center">
+                <td style="color:white">1st Period:</td>
+                <td style="color:white">2nd Period:</td>
+                <td style="color:white">3rd Period:</td>
+                <td style="color:white">4th Period:</td>
+                <td style="color:white">5th Period:</td>
+                <td style="color:white">6th Period:</td>
+                <td style="color:white">7th Period:</td>
+                <td style="color:white">8th Period:</td>
+            </tr>
+            <tr class="main" style="color:white" align="center">
+                <td>AP Computer Science Principles</td>
+                <td>AP Biology</td>
+                <td>SAT Prep Math</td>
+                <td>Chemistry (Honors)</td>
+                <td>SAT Prep English</td>
+                <td>Art I</td>
+                <td>Algebra II (Honors)</td>
+                <td>Ap Language and Composition</td>
+            </tr>
+            <tr align="center">
+                <td><img src="images/computer.jpg" height="250"></td>
+                <td><img src="images/frog.jpg" height="250"></td>
+                <td><img src="images/math.jpg" height="250"></td>
+                <td><img src="images/chemistry.jpg" height="250"></td>
+                <td><img src="images/book.jpg" height="250"></td>
+                <td><img src="images/art.jpg" height="250"></td>
+                <td><img src="images/algebra.JPG" height="250"></td>
+                <td><img src="images/english.jpg" height="250"></td>
+            </tr>
+        </table>
+        <div class="w3-content" style="max-width:35%;position:relative; margin:auto">
+            <div class="w3-display-container mySlides">
+                <img src="images/dna.jpg" style="width:100%">
+                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                    AP Biology
+                  </div>
+            </div>
+            
+            <div class="w3-display-container mySlides">
+                <img src="images/painting.jpg" style="width:100%">
+                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                    Art I
+                  </div>
+            </div>
+    
+            <div class="w3-display-container mySlides">
+                <img src="images/problem.gif" style="width:100%">
+                <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                    Algebra II
+                  </div>
+            </div>
+    
+            <div class="w3-display-container mySlides">
+                <img src="images/word.jpg" style="width:100%">
+                <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                    AP Language and Composition
+                  </div>
+            </div>
+            
+            <a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
+            <a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
+
+        </div>
+
+        <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n){
+        showDivs(slideIndex += n);
+        }
+
+        function showDivs(n){
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+        }
+        </script>
+        <p class="main" style="color:black" align="center">One of my favorite classes is AP Biology. This is because the class challenges you to think in numerous ways to solve problems and undrstand how life functions. My second favorite class is Art I, becuase you have the opprotunity to express yourself in any way, shape, or form by art. My third favorite class is Algebra II, because it creates a sense of review and problem-solving with nuch tense and patience. Finally, my fourth favorite class is AP Language and Composition. This is because our teacher, Mr . Schmith, creates a welcoming environment to the class and helps every student.</p>
+    </body>
+</htmt>
